@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vDate Example</title>
+	<script type="text/javascript" src="../vDate.js"></script>
+</head>
+<body>
+	<h1 id="DATE"></h1>
+</body>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var vdate = new vDate('now', 'dd/mm/yyyy hh:mm:ss');
+		console.log(vdate.format());
+		var el = document.getElementById("DATE");
+		el.innerHTML = vdate.format();
+	});
+</script>
+</html>
